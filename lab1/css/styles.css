@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   font-size:16px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .page {
@@ -42,7 +42,7 @@ body {
 .footer {
   padding: 20px;
   position: fixed;
-  height: 70px;
+  height: fit-content;
   bottom: 0;
 }
 
@@ -50,6 +50,8 @@ body {
   height: 70px;
 }
 
+
+/* portfolio grid layout */
 .portfolio {
   padding: 15px;
   display: grid;
@@ -71,17 +73,20 @@ body {
 }
 
 .magazine-style {
-  margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .content {
   padding: 20px;
-  width: 100%;
+  width: fit-content;
   height: 80%;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  order: initial;
 }
 
 .link {
@@ -94,6 +99,7 @@ body {
   text-decoration: none;
 }
 
+/* testimonial page */
 .avatar {
   float: left;
   width: 60px;
@@ -109,7 +115,8 @@ body {
 
 .review {
   margin: 10px;
-  overflow: hidden;  /* This is important */
+  overflow: hidden;
+  line-height: 1.4;
 }
 
 .testimonial {
@@ -117,7 +124,20 @@ body {
   width: 100%;
   margin: 10px;
   height: fit-content;
-  background-color: #464646;    /* Medium blue */
+  background-color: #464646;
+}
+
+.content-image {
+  width: 100%;
+}
+
+h1 {
+  color:rgb(167, 167, 167);
+  font-family: 'Grechen Fuemen', cursive;
+}
+
+img {
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 425px) {
